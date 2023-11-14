@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 100%;  
+      background: #eee;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      color: #222;
+      font-size: 14px;
+      line-height: 26px;
+      padding-bottom: 50px;
+    }
+
+    .resume-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 700px;   
+      background: #fff;
+      margin: 0px auto 0px; 
+      box-shadow: 1px 1px 2px #DAD7D7;
+      border-radius: 3px;  
+      padding: 40px;
+      margin-top: 50px;
+    }
+
+    .contact-section {
+      width: 100%;
+      text-align: left;
+    }
+
+    .experience-section {
+      display: flex;
+      width: 100%;
+    }
+
+    .experience-list {
+      flex: 3;
+      width: 75%;
+      margin-right: 20px;
+    }
+
+    .extras-list {
+      flex: 1;
+      width: 25%;
+    }
+
+    .footer {
+      flex: 1;
+      width: 100%;
+    }
+
+    h1, h2, p, li {
+      font-family: 'Tahoma', sans-serif;
+    }
+
+    .experience-subsection {
+      list-style-type:square; 
+      padding-left: 40px;
+    }
+    
+.container {
+  max-width: 700px;   
+  background: #fff;
+  margin: 0px auto 0px; 
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;  
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.header {
+  margin-bottom: 30px;
+  
+  .full-name {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .first-name {
+    font-weight: 700;
+  }
+  
+  .last-name {
+    font-weight: 300;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .email ,
+  .phone {
+    color: #999;
+    font-weight: 300;
+  } 
+  
+  .separator {
+    height: 10px;
+    display: inline-block;
+    border-left: 2px solid #999;
+    margin: 0px 10px;
+  }
+  
+  .position {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: underline;
+  }
+}
+
+
+.details {
+  line-height: 20px;
+  
+  .section {
+    margin-bottom: 40px;  
+  }
+  
+  .section:last-of-type {
+    margin-bottom: 0px;  
+  }
+  
+  .section__title {
+    letter-spacing: 2px;
+    color: #54AFE4;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .section__list-item {
+    margin-bottom: 40px;
+  }
+  
+  .section__list-item:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  .left ,
+  .right {
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+  .left {
+    width: 60%;    
+  }
+  
+  .right {
+    tex-align: right;
+    width: 39%;    
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+  
+  .skills {
+    
+  }
+    
+  .skills__item {
+    margin-bottom: 10px;  
+  }
+  
+  .skills__item .right {
+    input {
+      display: none;
+    }
+    
+    label {
+      display: inline-block;  
+      width: 20px;
+      height: 20px;
+      background: #C3DEF3;
+      border-radius: 20px;
+      margin-right: 3px;
+    }
+    
+    input:checked + label {
+      background: #79A9CE;
+    }
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <div class="contact-section">
+      <div class="header">
+        <div class="full-name"> <span class="first-name">Isaac</span> <span class="last-name">Johnson</span></div>
+        <div class="contact-info">
+        
+          
+            <p style="text-align: right;"><span class="email">Schooner Court, Woodbury MN, 55125  &#x2709;</span></p>
+          
+        
+          
+        
+          
+            <p style="text-align: right;"><span class="email">isaac@freshbrewed.science  &#128231;</span></p>
+          
+        
+          
+        
+        </div
+    </div>
+
+    <div class="details">
+    <div class="experience-section">
+      <div class="experience-list">
+        <div class="section__title">Experience</div>
+          <div class="section__list">
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Jan 2022 - present</strong>
+              <p><span class="name">Principal Software Engineer (SRE Architect)</span> at <span class="name">Wellsky</span> - <i>Overland Park, KS</i></p>
+              <p>Principal Architect over SRE Squad (3 Scrum Teams) for Wellsky Home Health and Hospice Product lines. Focus on Azure DevOps, On-prem deployments, Ansible, Artifactory, NewRelic Monitoring (from Sumo).  Pivot to Focus on GCP migration (On-prem/AWS). <ul class='experience-subsection'><li>March 2022 - Oct 2022:  Interim Software Director/Delivery Manager over Feature Squad (3 Scrum Team; US, India, and Argentina) (in addition to Architect role)<li>March - Wellsky Home Culture Award for High Performance<li>Handled high priority Subpoena(s) (Grand Jury request(s))<li>Point person on full GCP Migration for one BU, key resource for another<li>Part of Diversity and Inclusion working group (DEI)<li>Point on SkyDev Studio (Learning Series) for DevOps and TechTalks (two different Studio series)<li>Presented 15m Lighting Talk (mgmt; PunchUp, LiftDown) and 2 Hour Azure DevOps Workshop at DevDays 2023 internal conference<li>Help Azure-based BUs with updates (e.g. AKS)</ul>Recently added in Personal Care unit, Datadog Monitor, Ansible AWX configurations.</p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Jul 2021 - Jan 2022</strong>
+              <p><span class="name">Principal DevOps Engineer (Cloud Solutions Architect/Devops Architect)</span> at <span class="name">CH Robinson</span> - <i>Eden Prairie, MN</i></p>
+              <p>Focus on North Europe Migration Effort with Artifactory Backups and Restore. Ansible Playbook support. Support for Software Teams primarily in Jenkins using Octopus. Ansible Playbooks for Operational Updates (Timezones, etc).     Created and presented a course on Kubernetes to EU and US teams.  Worked on APM and Logging suite evaluations for Enterprise Architects. Supported end users in Kubernetes.  Engaged and worked with Cloud Team on Terraform updates (Atlantis).</p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Sep 2019 - Jul 2021</strong>
+              <p><span class="name">Principal Software Engineer (Azure DevOps)</span> at <span class="name">Medtronic</span> - <i>Mounds View, MN</i></p>
+              <p>Support Azure DevOps for all Carelink R2 (Cloud) activities with a focus on “right side” containerization, deployment, secrets propagation, builds for .NET and Java, user support. Assist Architecture team on a variety of projects (Metrics, Dashboards). Work with other CRHF teams in their projects (Reports and Metrics for Security, Sonarqube for OneApp, builds for Rhythm). As team reduced to effectively one, sole supporter for all builds/build setup for CL R2 while liaised in with MLife Infrastructure team to support Infrastructure both on-prem and in the clouds (AWS, Azure).</p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Jun 2018 - Sep 2019</strong>
+              <p><span class="name">Cloud Solutions Architect and Delivery Manager</span> at <span class="name">Ahead</span> - <i>Chicago, IL</i></p>
+              <p>Brought in as Cloud Solutions Architect with DevOps and AWS Experience to focus on Azure DevOps and Azure microservices implementation at Medtronic.<ul class='experience-subsection'><li>For first year focused on Medtronic CareLink future release including setting up Azure DevOps, TFS Migration, Kubernetes implementation and Terraform IaC support.  Additionally, during this duration sought and got Azure Cloud (70-535) and Hashi Vault Intermediate certifications. </li><li>From May 2019 on, also served as Delivery Manager focusing on delivering automation solutions to Midwest region which included resource planning, contract write ups (SOW, WBS), and workshops. <ul class='experience-subsection'><li>This included an AKS Foundation implementation at Medline with AAD RBAC </li><li>and a similar AKS and DevOps workshop with the University of Minnesota Center for Farm Finance Management.</li><li>I’ve also lead an Azure Inno Days at Microsoft campus in the Twin Cities and been at the center of devops calls and scoping discussions with many other potential customers ranging from automotive to beauty supply companies.</li></ul></li></ul></p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Aug 2017 - Jun 2018</strong>
+              <p><span class="name">CICD Lead - Cloud Center of Excellence</span> at <span class="name">ThomsonReuters</span> - <i>Eagan, MN</i></p>
+              <p>Manage 4 directs with CICD Focus utilizing AWS. Tightly connected to CO (Continuous Ops) team. 50/50 on Technical Leadership/Coding and People leadership (reviews, feedback, guidance).<br/>Accomplishments: <ul class='experience-subsection'><li>Lead team through Agile Dojo (first in COE) to develop cloud-centric full app deployment (e.g AWS Codepipeline/ALBs).</li><li>Implement Gitflow. </li><li>First lead/manager in COE to get AWS Certified (AWS Solutions Arch Associate).. </li></ul>Cloud Center of Excellence is a 30+ group focused on helping TR migrate existing infrastructure to the cloud by way of training, templates, POCs, AWS (and some Azure) expertise.</p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Aug 2017 - Aug 2017</strong>
+              <p><span class="name">Senior SCM Engineer</span> at <span class="name">Intuit (TurboTax)</span> - <i>San Diego, CA</i></p>
+              <p>SCM And Tools - CICD Team (AWS) [CFN/EC2/Go/Clojure].<br/>Central Tech Organization (CTO) SCM - Build/SCM/DevOps team (reduced from 4 to 1) [Internal Cloud/P4/GIT/NODEJS/MAVEN/JENKINS]<br/>Build systems and tools to support all levels of Tax software</p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Apr 2011 - Mar 2014</strong>
+              <p><span class="name">Staff SE (SCM)</span> at <span class="name">Novatel Wireless (now Inseego)</span> - <i>San Diego, CA</i></p>
+              <p>MiFi Builds and Releases - All Product Lines [P4/SVN].  Supported entirely JIRA / Ticketing System migration (All). Managed Hosted Atlassian, AWS (CloudFront/S3) [backend for MiFi Updates]</p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Dec 2009 - Apr 2011</strong>
+              <p><span class="name">Software Configuration Management</span> at <span class="name">PatientSafeSolutions</span> - <i>San Diego, CA</i></p>
+              <p>Build and Release (migrate from Bamboo to Hudson/MVN/Ant). Migration of MySQL/Ubuntu to Postgres/CentOS, P2V. Builds and Releases: Automated iOS builds w/ simulator and dev provisioning. Enterprise distribution, OTA deployments. JIRA, Support Sales with Demo setup.</p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Jul 2009 - Dec 2009</strong>
+              <p><span class="name">Manager (SCM Dept) - 6m contract</span> at <span class="name">Life Technologies (Applied Biosystems)</span> - <i>Foster City, CA</i></p>
+              <p>Build Farms and Subversion, ESXi, Windows builds and installers. Resource Management of 4 Staff Engineers over multiple Genetic / Biotech systems (e.g. Genetic Analysis, Mass Spectrometers). <i>I opted to not renew/flip to move to San Diego</i></p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Sep 2008 - Jul 2009</strong>
+              <p><span class="name">Manager/Lead (SCM)</span> at <span class="name">Vital Images (GE)</span> - <i>Minnetonka, MN</i></p>
+              <p>Cost Saving Migrations - P4 to Subversion, Some CC UCM to Subversion. BuildForge to CruiseControl .NET/NANT.  P2V systems (ESX on small in-house datacenter). Started as Manager of Vital Infrastructure group (5+) but changed to Lead in 2009 when cutbacks reduced org and merged with Shared Services team.</p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Dec 2005 - Sep 2009</strong>
+              <p><span class="name">Group Lead (SCM and Tools)</span> at <span class="name">PTC/Windhill</span> - <i>Arden Hills, MN</i></p>
+              <p>SSE of Tools, Promoted to GL (4/06). In charge of multiple SCM Tools related to CMMI/Process management in support of PDM/PLM Windchill tools (Java).  Systems in PHP, Java, Perl with AJAX, MySQL (LAMP). Ticketting in Siebel CaRDS, VersionOne.</p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>Oct 2004 - Dec 2005</strong>
+              <p><span class="name">SCM Software Engineer</span> at <span class="name">GMAC RFC</span> - <i>Bloomington, MN</i></p>
+              <p>Lead Installation project for AssetWise Direct, PDO Installers into Installshield X. Manage builds systems for PDO (VisualBuild,VSS, VisualStudio 6.0, VS .NET 2002/2003). Chief "install guy"<i>12/2004 to 8/2004 contractor, flipped to FTE</i></p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>May 2000 - Oct 2000</strong>
+              <p><span class="name">Intern SE</span> at <span class="name">WestGroup (now ThompsonReuters)</span> - <i>Eagan, MN</i></p>
+              <p>ASP Pages talking with SQL Server. Moved into COM/COM+ programming with XML middle tier. <i>Summer Internship</i></p>
+            </li>
+          </ul>
+          </div>
+            
+          
+            
+                <div class="section__list-item">
+                  <ul>
+            <li>
+              <strong>May 1997 - May 2000</strong>
+              <p><span class="name">Intern SE</span> at <span class="name">ICEM Technologies (Control Data Corp)</span> - <i>Arden Hills, MN</i></p>
+              <p>UNIX (SGI/CD Cyber 950, IRIX 5.3/ 6.3) - ICEM DDN in Fortran 77, some C/C++. System Builds.  Left after company purchased by PTC. <i>Internship</i></p>
+            </li>
+          </ul>
+          </div>
+            
+          
+        </div>
+        
+      </br></br>
+
+        <div class="section__title">Education</div>
+          
+            
+              <ul>
+            <li>
+              <i>1998-2001:</i> - <strong>University of St. Thomas</strong> - St. Paul, MN
+              <p>Bachelor of Quantitative Methods and Computer Science (QMCS): achieved</p>
+            </li>
+          </ul>
+          <br/>
+            
+          
+            
+              <ul>
+            <li>
+              <i>1996-1998:</i> - <strong>Michigan Technological University</strong> - Houghton, MI
+              <p>Bachelor of Computer Science: (transfered)</p>
+            </li>
+          </ul>
+          <br/>
+            
+          
+      </div>
+
+      <div class="extras-list">
+        <div class="section__title">Skills</div>
+          
+            
+              <ul><strong><u>The Clouds and Kubernetes</u></strong>
+            <li>
+              <p>I have many guides on my freshbrewed.science blog covering how to install and manage k8s on AWS, GCE, Azure, Digital Ocean, Vultr and Linode. I've presented on GitOps and CICD at conferences such as Open Source North. I'm fairly savvy on the differences between the mainstream cloud providers and how to implement robust Kubernetes solutions.</p>
+            </li>
+          </ul><br/>
+            
+          
+            
+              <ul><strong><u>People Management</u></strong>
+            <li>
+              <p>Manager of both Senior (Staff) engineers and junior (Intern/SEs).<br/><strong>A Focus on GSD</strong> (get stuff done) - applying Agile/Waterfall and mixed methodologies.<br/><strong>A Focus on ROI</strong> - With 20+ years experience, I bring a wealth of knowledge to know when to purchase and when and how to create.<br/><strong>Servant Leadership</strong> - A good manager enables their team to succeed. That has meant Technical Leadership (PTC), Technical and Career (Vital) and Big Picture/Project and Career (Applied Bio/Life Technologies)</p>
+            </li>
+          </ul><br/>
+            
+          
+            
+              <ul><strong><u>DevOps, SRE, and Software Configuration Management (SCM) - All Of It.</u></strong>
+            <li>
+              <p>From Linux, Mac, Windows as well as Mobile Cloud, Most build systems, most Source Code Control (revision control systems), most installers and many deployments systems and models.</p>
+            </li>
+          </ul><br/>
+            
+          
+        <br/>
+        <div class="section__title">Certifications</div>
+        <ul>
+          
+            
+            <li>
+              <strong>Apr 2021 - Apr 2023 (now Apr 2024)</strong>
+              <p>Certification: Azure AZ-104 - Azure Administrator</p>
+            </li>
+            
+          
+            
+            <li>
+              <strong>Mar 2019</strong>
+              <p>Certification: Hashi Vault Intermediate</p>
+            </li>
+            
+          
+            
+            <li>
+              <strong>Oct 2018 - Feb 2020</strong>
+              <p>Certification: Azure MCP - 70-735 Architecting Microsoft Azure Solutions</p>
+            </li>
+            
+          
+            
+            <li>
+              <strong>Jan 2018 - Feb 2020</strong>
+              <p>Certification: AWS Certified Solutions Architect - Associate</p>
+            </li>
+            
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+    <br/>
+    <div class="footer">
+      <p style="text-align: right; font-size: small;">Date Generated: 11/14/2023 :: Version: 4.10.1</p>
+    </div>
+  </div>
+</body>
+</html>
